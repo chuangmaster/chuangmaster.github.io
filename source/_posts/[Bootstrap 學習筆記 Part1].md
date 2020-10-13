@@ -7,7 +7,6 @@ notebook: L14.Bootstrap
 
 # Bootstrap 學習筆記 Part1
 
-[TOC]
 
 ## BoxSizing
 
