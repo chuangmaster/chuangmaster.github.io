@@ -1,13 +1,15 @@
 ---
 title: [Bootstrap 學習筆記 Part1]
-tags: Bootstrap
 date: 2019-04-03 12:00:00
+categories:
+- Boostrap Learning
+tags:
+- Boostrap4
+- HTML
 notebook: L14.Bootstrap
 ---
 
 # Bootstrap 學習筆記 Part1
-
-[TOC]
 
 ## BoxSizing
 

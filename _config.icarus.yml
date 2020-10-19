@@ -3,7 +3,9 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+#logo: /img/logo.svg
+logo: 
+    text: M
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -128,7 +130,7 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-light
+        theme: monokai
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -203,9 +205,9 @@ widgets:
         # Author's current location
         location: Taiwan
         # URL or path to the avatar image
-        avatar: 
+        avatar:  'https://i.imgur.com/BZk5peO.jpg'
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
