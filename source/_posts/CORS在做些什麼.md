@@ -13,7 +13,7 @@ tags:
 
 ### 何謂同源(Same Orign Policy)
 
-在釐清 CORS 在做什麼之前，首先我們要知道什麼樣的資源稱為同站資源？同站資源亦作為同源，當存取的資源**相同網路協定(Protocol)**、**相同網域(Domain)**、**相同連接阜(Port)**，就會視為同源
+在釐清 CORS 在做什麼之前，首先我們要知道什麼樣的資源稱為同站資源？同站資源亦作為同源，當存取的資源 **相同網路協定(Protocol)** 、 **相同網域(Domain)** 、 **相同連接阜(Port)** ，就會視為同源
 
 > 舉例
 >
@@ -32,6 +32,7 @@ tags:
 > > 兩個連接阜不同，會被視為不同源
 
 <br>
+
 ### 不同源會怎麼樣?
 
 當網域 A 取用網域 B 的資源時，就會無法順利資源，錯誤訊息會像是下方
@@ -68,7 +69,7 @@ application/json
 
 ### Preflight Requet (預檢)
 
-當不符合簡單請求時，瀏覽器會正常 Request 前先對請求的資源發一個名為 **Preflight Request** ，目的要檢查這個資源 (Server) 是否允許目前要進行的真實請求，這個 Request 會對 Server 進行 Http Options 的動作， Server 必須對這個 Preflight Request 進行確認，判斷這個來源是否可以提供存取、使用什麼樣的資料等，接著依照真實的需求回覆，Response Header 可能包含**允許請求的來源(Access-Control-Allow-Origin)**、**允許的請求方式(Access-Control-Allow-Method)**、**允許請求發出的 Header 內容 (Access-Control-Allow-Headers)** 。
+當不符合簡單請求時，瀏覽器會正常 Request 前先對請求的資源發一個名為 **Preflight Request** ，目的要檢查這個資源 (Server) 是否允許目前要進行的真實請求，這個 Request 會對 Server 進行 Http Options 的動作， Server 必須對這個 Preflight Request 進行確認，判斷這個來源是否可以提供存取、使用什麼樣的資料等，接著依照真實的需求回覆，Response Header 可能包含 **允許請求的來源(Access-Control-Allow-Origin)** 、 **允許的請求方式(Access-Control-Allow-Method)** 、 **允許請求發出的 Header 內容 (Access-Control-Allow-Headers)** 。
 
 _**瀏覽器對 Server 進行 Preflight Request 範例**_
 
@@ -81,15 +82,16 @@ Content-Type
 _**Server 對瀏覽器 Preflight Response 範例**_
 
 ```html{.line-numbers}
-Access-Control-Allow-Origin: * Access-Control-Allow-Method: POST
+Access-Control-Allow-Origin: Access-Control-Allow-Method: POST
 Access-Control-Allow-Headers: X-MY-HEADER, Content-Type
 ```
 
-> `Access-Control-Allow-Origin: *` 表示允許所有來源
+> `Access-Control-Allow-Origin:` 表示允許所有來源
 > 這部分允許的內容必須符合 Preflight Request 的 Origin
 
 一旦 Preflight Response 與 Request 內的項目不符，就會被瀏覽器阻擋下來的動作。
 
 ### 參考資料
 
-https://medium.com/@des75421/cors-%E8%B7%A8%E4%BE%86%E6%BA%90%E8%B3%87%E6%BA%90%E5%85%B1%E7%94%A8cors-191d4bfc4735
+1. https://developer.mozilla.org/zh-TW/docs/Web/HTTP/CORS
+2. https://shubo.io/what-is-cors/
