@@ -32,7 +32,7 @@ categories:
 
 為了看一下瀏覽器阻擋 CORS 的錯誤，我製造了一個在不同源的狀況下，進行請求
 
-_**前端請求**_
+- 前端請求
 
 ```javascript{.line-numbers}
 var data = {
@@ -50,7 +50,7 @@ $.ajax({
 });
 ```
 
-_**資源正常 Request 接口**_
+- 資源正常 Request 接口
 
 ```C#{.line-numbers}
 [HttpPost]
@@ -67,7 +67,7 @@ public HttpResponseMessage NormalRequest_error() {
 
 接下來我們提供該組服務
 
-_**新增處理 OPTIONS 接口**_
+- 新增處理 OPTIONS 接口\*\*\_
 
 ```C#{.line-numbers}
 [HttpOptions]
@@ -82,7 +82,9 @@ public HttpResponseMessage NormalRequest_error_option()
 再來就會看到 Http Options 雖然成功了，但是在 Actual Request 卻失敗了，原因就是此資源不提供不同源的存取
 ![error in actual request 1 ](https://i.imgur.com/XVctzcO.jpg)
 
-_**補上相關回應**_
+- 加上伺服器對 CORS 回應
+
+為了讓預檢能夠對不同來源進行存取，所以在 Header 加入了 `Access-Control-Allow-Origin` 並設定允許任何不同源位置 (`*`)；其次因為發送的 Request Content-Type 為 **application/json**，與簡單請求所使用的 Content-Type 不同，所以這邊我也一併將 `Content-Type`也給加上
 
 ```C#{.line-numbers}
 [HttpOptions]
