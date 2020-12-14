@@ -35,7 +35,7 @@ tags:
 
 當網域 A 取用網域 B 的資源時，就會無法順利資源，錯誤訊息會像是下方
 
-> Access to XMLHttpRequest at 'https://DomainA/api/v1/Test' from origin 'https://DomainB' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+> Access to XMLHttpRequest at 'https://DomainA/api/v1/Test' from origin 'https://DomainB' has been blocked by CORS policy: Request header field content-type is not allowed by Access-Control-Allow-Headers in preflight response.
 
 但為什麼我可以用其它網域的 Image、Javascript、CSS 等資源？有些資源卻無法使用？決定這個來源存取的標準，是請求為「簡單請求」，當只要是簡單請求，就可以順利獲得資源
 <br><br>
