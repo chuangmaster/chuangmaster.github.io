@@ -5,8 +5,7 @@ tags:
   - .NET
   - WEB API
   - CORS
-categories:
-  - techblog
+categories: tech
 ---
 
 ## 前言

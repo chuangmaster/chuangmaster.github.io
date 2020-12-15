@@ -3,6 +3,7 @@ title: CORS在做些什麼
 date: 2020-11-07 16:05:37
 tags:
   - CORS
+categories: tech
 ---
 
 ## 什麼是 CORS(Cross-Origin Resource Sharing)
