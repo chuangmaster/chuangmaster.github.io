@@ -3,8 +3,8 @@ title: [Bootstrap 學習筆記 Part1]
 date: 2019-04-03 12:00:00
 notebook: L14.Bootstrap
 categories:
-  - Tech
-  - FrontEnd
+  - tech
+  - front-end
 tags: Bootstrap
 ---
 
