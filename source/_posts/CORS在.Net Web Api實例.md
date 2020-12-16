@@ -5,12 +5,14 @@ tags:
   - .NET
   - WEB API
   - CORS
-categories: tech
+categories:
+  - Tech
+  - .NET
 ---
 
 ## 前言
 
-經過[上一篇](https://chuangmaster.github.io/uncategorized/CORS%E5%9C%A8%E5%81%9A%E4%BA%9B%E4%BB%80%E9%BA%BC)了解到了 CORS 運作原理，為了感受上一篇運作在真實環境的情形，因此有了這一篇文章的出現，這一篇文章紀錄我目前在 .NET 專案環境在遇到 CORS 的情境與我使用的解決方案。
+經過[上一篇](https://chuangmaster.github.io/tech/CORS%E5%9C%A8%E5%81%9A%E4%BA%9B%E4%BB%80%E9%BA%BC/)了解到了 CORS 運作原理，為了感受上一篇運作在真實環境的情形，因此有了這一篇文章的出現，這一篇文章紀錄我目前在 .NET 專案環境在遇到 CORS 的情境與我使用的解決方案。
 
 ---
 
