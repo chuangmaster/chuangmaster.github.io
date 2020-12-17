@@ -5,6 +5,7 @@ tags:
   - .NET
   - WEB API
   - CORS
+  - GG
 categories:
   - tech
   - dot-net
