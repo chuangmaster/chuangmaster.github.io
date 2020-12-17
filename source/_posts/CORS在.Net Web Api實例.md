@@ -6,8 +6,8 @@ tags:
   - WEB API
   - CORS
 categories:
-  - tech
-  - dot-net
+  - Tech
+  - Dot-Net
 ---
 
 ## 前言
