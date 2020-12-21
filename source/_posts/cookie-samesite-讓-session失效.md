@@ -1,6 +1,5 @@
 ---
 title: Cookie SameSite 讓 Session失效
-date: 2020-12-16 10:59:46
 tags:
   - SameSite
   - Cookie
@@ -8,7 +7,9 @@ tags:
   - Session
 categories:
   - Tech
+date: 2020-12-16 10:59:46
 ---
+
 
 ## 前言
 在工作的時候遇到一個物流專案，選擇物流會導頁到廠商的網站，在導頁回原本站上，但這個時候卻發現 Session 竟然失效了。花了大半天 Debug ，後來發現原來是 [Chrome 對 Cookie 政策修改](https://blog.chromium.org/2020/02/samesite-cookie-changes-in-february.html)了，因此 ASP.NET_SessionId 的 Cookie 消失了，造成 Session 失效。
